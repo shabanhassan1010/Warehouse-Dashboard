@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg shadow-lg" 
+  style="background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%); border-bottom: 1px solid #e2e8f0;">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold d-flex align-items-center" routerLink="/dashboard/home">
+      <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+        <i class="fas fa-warehouse text-white fa-lg"></i>
+      </div>
+      <span class="text-dark">إدارة المستودع</span>
+    </a>
+
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#warehouseNavbar" aria-controls="warehouseNavbar" aria-expanded="false" aria-label="تبديل القائمة">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="warehouseNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
+        <li class="nav-item">
+          <a class="nav-link text-dark" routerLink="/dashboard/home" routerLinkActive="active">
+            <i class="fas fa-home me-2"></i>
+            لوحة التحكم
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" routerLink="/dashboard/medicines" routerLinkActive="active">
+            <i class="fas fa-pills me-2"></i>
+            أدوية المستودع
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" routerLink="/dashboard/profile" routerLinkActive="active">
+            <i class="fas fa-user me-2"></i>
+            الملف الشخصي
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-danger fw-bold" (click)="logout()" routerLink="/login" routerLinkActive="active">
+            <i class="fas fa-sign-out-alt me-2"></i>
+            تسجيل الخروج
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+

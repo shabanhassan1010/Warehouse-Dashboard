@@ -1,0 +1,82 @@
+body {
+  background: #F9FAFB; /* خلفية فاتحة مريحة للعين */
+  min-height: 100vh;
+  font-family: 'Cairo', 'Tajawal', Arial, sans-serif;
+  color: #1f2937; /* رمادي غامق للكتابة */
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar friendly */
+.navbar {
+  border-radius: 0 0 1rem 1rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #4F46E5, #06B6D4) !important;
+  box-shadow: 0 4px 20px rgba(79, 70, 229, 0.2);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white !important;
+}
+
+.navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fff !important;
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(135deg, #4F46E5, #06B6D4);
+  border: none;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #4338CA, #0891B2);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(79, 70, 229, 0.3);
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #10B981, #34D399);
+  color: white;
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, #EF4444, #F87171);
+  color: white;
+}
+
+/* Cards */
+.card {
+  border-radius: 1rem;
+  border: none;
+  background: white;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, #4F46E5, #06B6D4) !important;
+  margin-top: auto;
+  border-radius: 1rem 1rem 0 0;
+  color: white;
+}
