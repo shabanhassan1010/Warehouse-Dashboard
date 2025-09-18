@@ -30,6 +30,8 @@ import autoTable from 'jspdf-autotable';
   discountPercentage: number;
   pharmacyName: string;
   wareHouseName: string;
+  pharmacyNumber: string;
+  pharmacyAddress: string;
 }
 
 export interface InvoiceResponse {
@@ -304,7 +306,10 @@ export class OrderDetails implements OnInit {
       doc.text(`التاريخ: ${this.order?.orderDate}`, 200, 80, { align: 'right' });
       doc.text(`${orderInfo.wareHouseName} :مخزن`, 200, 90, { align: 'right' });
       doc.text(`${orderInfo.pharmacyName} :صيدلية`, 200, 100, { align: 'right' });
-      doc.line(10, 105, pageWidth - 10, 105);
+      doc.text(`${orderInfo.pharmacyNumber} :صيدلية رقم`, 200, 110, { align: 'right' });
+      doc.text(`${orderInfo.pharmacyAddress} :صيدلية العنوان`, 200, 120, { align: 'right' });
+
+      doc.line(10, 125, pageWidth - 10, 125);
 
       // Table
       autoTable(doc, {
@@ -326,7 +331,7 @@ export class OrderDetails implements OnInit {
           item.totalPriceBeforeDisccount.toFixed(2),
           item.totalPriceAfterDisccount.toFixed(2),
         ].reverse()),
-        startY: 110,
+        startY: 130,
         styles: { halign: 'right', font: 'Amiri', fontStyle: 'normal' },
         headStyles: { fillColor: [200, 200, 200], halign: 'center' },
       });
