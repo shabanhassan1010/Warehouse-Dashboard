@@ -21,3 +21,5 @@ environment.prod.ts
 # OS files
 .DS_Store
 Thumbs.db
+.angular/
+

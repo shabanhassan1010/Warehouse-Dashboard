@@ -305,9 +305,9 @@ export class OrderDetails implements OnInit {
       doc.text(`رقم الطلب: ${this.invoiceOrderId}`, 200, 70, { align: 'right' });
       doc.text(`التاريخ: ${this.order?.orderDate}`, 200, 80, { align: 'right' });
       doc.text(`${orderInfo.wareHouseName} :مخزن`, 200, 90, { align: 'right' });
-      doc.text(`${orderInfo.pharmacyName} :صيدلية`, 200, 100, { align: 'right' });
-      doc.text(`${orderInfo.pharmacyNumber} :صيدلية رقم`, 200, 110, { align: 'right' });
-      doc.text(`${orderInfo.pharmacyAddress} :صيدلية العنوان`, 200, 120, { align: 'right' });
+      doc.text(`${orderInfo.pharmacyName} :الصيدلية`, 200, 100, { align: 'right' });
+      doc.text(`${orderInfo.pharmacyNumber} :رقم الصيدلية `, 200, 110, { align: 'right' });
+      doc.text(`${orderInfo.pharmacyAddress} : عنوان الصيدلية `, 200, 120, { align: 'right' });
 
       doc.line(10, 125, pageWidth - 10, 125);
 
