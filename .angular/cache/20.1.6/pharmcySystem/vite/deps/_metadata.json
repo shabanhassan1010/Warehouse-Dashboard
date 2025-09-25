@@ -1,13 +1,14 @@
 {
-  "hash": "a9fd7f04",
-  "configHash": "383279bb",
-  "lockfileHash": "8f5ee4fd",
-  "browserHash": "531f8046",
+  "hash": "7e8724c9",
+  "configHash": "e1e96481",
+  "lockfileHash": "316454c2",
+  "browserHash": "39376df9",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
       "fileHash": "d4eefaf3",
+
       "needsInterop": false
     },
     "@angular/common/http": {
@@ -56,12 +57,14 @@
       "src": "../../../../../../node_modules/jspdf-autotable/dist/jspdf.plugin.autotable.mjs",
       "file": "jspdf-autotable.js",
       "fileHash": "35aef67e",
+
       "needsInterop": false
     },
     "rxjs": {
       "src": "../../../../../../node_modules/rxjs/dist/esm5/index.js",
       "file": "rxjs.js",
       "fileHash": "b8860ff0",
+
       "needsInterop": false
     },
     "xlsx": {
