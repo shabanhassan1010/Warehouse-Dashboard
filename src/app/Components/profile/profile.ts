@@ -71,7 +71,7 @@ export class Profile implements OnInit {
 
     // console.log('Fetching warehouse data for ID:', warehouseId);
 
-    fetch(`http://www.PharmaAtOncePreDeploy.somee.com/api/Warehouse/Getbyid/${warehouseId}`, {
+    fetch(`https://atoncepharma.somee.com/api/Warehouse/Getbyid/${warehouseId}`, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem('authToken')}`,
         'Content-Type': 'application/json',
@@ -136,7 +136,7 @@ export class Profile implements OnInit {
     // console.log('Updating warehouse with data:', formData);
 
     fetch(
-      `http://www.PharmaAtOncePreDeploy.somee.com/api/Warehouse/UpdateWarehouse/${this.warehouse?.id}`,
+      `https://atoncepharma.somee.com/api/Warehouse/UpdateWarehouse/${this.warehouse?.id}`,
       {
         method: 'PUT',
         headers: {
@@ -171,7 +171,7 @@ export class Profile implements OnInit {
   getProfileImage() {
     return this.warehouse &&
       this.warehouse.imageUrl && this.warehouse.imageUrl !== 'string'
-      ? 'http://www.pharmaatoncepredeploy.somee.com/'+ this.warehouse.imageUrl 
+      ? 'https://atoncepharma.somee.com/'+ this.warehouse.imageUrl 
       : 'https://ui-avatars.com/api/?name=Warehouse&background=0D8ABC&color=fff&rounded=true&size=128';
   }
 

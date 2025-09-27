@@ -70,7 +70,7 @@ export class MedicineEditFormComponent implements OnInit {
     const warehouseId = warehouseData?.id || this.warehouseId || '73';
 
     fetch(
-      `http://www.PharmaAtOncePreDeploy.somee.com/api/Warehouse/Getbyid/${warehouseId}`,
+      `https://atoncepharma.somee.com/api/Warehouse/Getbyid/${warehouseId}`,
       {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('authToken')}`,
@@ -109,7 +109,7 @@ export class MedicineEditFormComponent implements OnInit {
   fetchMedicine() {
     this.http
       .get<any>(
-        `http://www.PharmaAtOncePreDeploy.somee.com/api/WarehouseMedicine/GetMedicineById?medicineId=${this.medicineId}&warehouseId=${this.warehouseId}`
+        `https://atoncepharma.somee.com/api/WarehouseMedicine/GetMedicineById?medicineId=${this.medicineId}&warehouseId=${this.warehouseId}`
       )
       .subscribe({
         next: (data) => {
@@ -150,7 +150,7 @@ export class MedicineEditFormComponent implements OnInit {
 
     this.http
       .put(
-        `http://www.PharmaAtOncePreDeploy.somee.com/api/WarehouseMedicine/UpdateMedicine/${this.medicineId}?warehouseId=${this.warehouseId}`,
+        `https://atoncepharma.somee.com/api/WarehouseMedicine/UpdateMedicine/${this.medicineId}?warehouseId=${this.warehouseId}`,
         formData,
         { responseType: 'text' }
       )

@@ -1,6 +1,6 @@
 {
   "/api": {
-    "target": "http://pharmaatoncepredeploy.somee.com",
+    "target": "https://atoncepharma.somee.com",
     "secure": false,
     "changeOrigin": true,
     "logLevel": "debug"

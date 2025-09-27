@@ -29,7 +29,7 @@ export class Warehouses implements OnInit {
 
   fetchMedicines() {
     this.loading = true;
-    fetch('http://www.PharmaAtOncePreDeploy.somee.com/api/Warehouse/GetWarehousMedicines')
+    fetch('https://atoncepharma.somee.com/api/Warehouse/GetWarehousMedicines')
       .then(response => {
         if (!response.ok) throw new Error('Network response was not ok');
         return response.json();

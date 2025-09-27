@@ -100,7 +100,7 @@ export class Home implements OnInit {
     }
 
     // http://www.pharmaatoncepredeploy.somee.com
-    return fetch(`http://www.PharmaAtOncePreDeploy.somee.com/api/Order/warehouse/${warehouseId}`, {
+    return fetch(`https://atoncepharma.somee.com/api/Order/warehouse/${warehouseId}`, {
       headers: {
         Authorization: `Bearer ${token}`,
         'Content-Type': 'application/json',
@@ -140,7 +140,7 @@ export class Home implements OnInit {
       warehouseId = warehouse.id;
     }
 
-    fetch(`http://www.PharmaAtOncePreDeploy.somee.com/api/Order/warehouse/${warehouseId}`, {
+    fetch(`https://atoncepharma.somee.com/api/Order/warehouse/${warehouseId}`, {
       headers: {
         Authorization: `Bearer ${token}`,
         'Content-Type': 'application/json',
